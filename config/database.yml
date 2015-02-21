@@ -18,3 +18,6 @@ test:
 production:
   <<: *default
   database: deploymenttutorial_production
+  host: localhost
+  username: sample_user
+  password: sample_password
