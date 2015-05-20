@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221025114) do
+ActiveRecord::Schema.define(version: 20150520015641) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "headline",     limit: 255
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150221025114) do
     t.datetime "publish_date"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.string   "author",       limit: 255
   end
 
 end
